@@ -33,7 +33,7 @@ function! GetC3POColumn()
     let col = s:c3po_max
   else
     let pct = floor(curline) / floor(lastline)
-    let col = float2nr(pct * s:c3po_width)
+    let col = 1+float2nr(round(pct * (s:c3po_width-1)))
   endif
 
   return col
