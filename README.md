@@ -25,6 +25,7 @@ Use your favorite method:
 Configuration
 --------------
 Use `g:cc` var for other colorcolumns (`:h 'cc`).
+Check the source code for functions and commands.
 
 Acknowledgments
 ----------------
