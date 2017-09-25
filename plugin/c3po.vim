@@ -79,7 +79,9 @@ endfun
 com! -bang ToggleC3PO
       \ call ToggleC3PO()
 
-call <Sid>SetAutocmds()
+if get(g:, 'c3po_onstart', 1)
+  call <Sid>SetAutocmds()
+endif
 
 let &cpo = s:save_cpo
 
